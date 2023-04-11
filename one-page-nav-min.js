@@ -16,6 +16,17 @@
  *   scrollSpeed: 750
  * });
  */
+(function($) {
+  "use strict";
+  
+  var top_offset = $('.header-area').height() - 100;
+  
+  $('.main-menu nav ul').onePageNav({
+    currentClass: 'active',
+    scrollOffset: top_offset,
+  });
+
+})(jQuery);
 !function(t, i, n, s) {
     var e = function(s, e) {
         this.elem = s,
